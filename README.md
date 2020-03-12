@@ -46,3 +46,15 @@ The repository has two files:
 + **liveplot.py**: This script monitors and plots the data in the **log.txt** file after every fixed interval of time.
 
 To start generating and visualization, run the **generator.py** and then the **liveplot.py**. To change the rate of generation of numbers you can change the sleep time in the generator.py accordingly and to change the refesh rate in the graph you can change the interval time in the liveplot.py.
+
+## **❤ Support**
+If you like my work, a bit of contribution would motivate me a lot for more open source contributions.
+
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/amannirala13)
+
+*Please support the work:*
+ - [Follow on **Github**](https://github.com/amannirala13)
+ - [Follow on **LinkedIn**](https://www.linkedin.com/in/amannirala13/)
+ - [Follow on **Twitter**](https://twitter.com/AmanNirala13)
+ - [Follow on **Instagram**](https://www.instagram.com/amannirala13/)
+ - [Follow on **HackerRank**](https://www.hackerrank.com/amannirala13)
