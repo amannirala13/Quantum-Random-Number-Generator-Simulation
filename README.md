@@ -1,7 +1,18 @@
 # Quantum-Random-Number-Generator-Simulation
 ⚛ A random number generator and Visualizer that generates true random numbers (theoritically) by simulating a Qunatum Sysem and plots live graph of the numbers generated. The alogrithm is based on the core concept of superposition and its uncertainity.
+
+## Physics Alert!👨‍🏫
+This qunatum algorithm is based upon the core idea of **Werner Heisenberg Uncertainty Principle** and **Quantum Superposition**. The value of a qubit in a bloch sphere model is determined to be in the eigenstates of **|0>** or **|1>** based upon its position along the **z-axis** and **|+>** or **|->** based upon its positoin in **x-axis**. According to the uncertainity principle if we measure the qubit along the x-axis the state of the qubit along the z-axis goes in the superposition. In this algorithm the qubit was initially |0> i.e. its value along the z-axis was certain. I then applied the **Hadamard Gate** which performed matrix operation upon the qubit to perform a rotation of ⫪ radian along the z-axis and ⫪/2 radian along y-axis. This operation projects the qubit on the x plane which puts it in a superposition along the other two axises. The effect of Hadamard gate on a qubit can be formalized as:
+
+![hadamard gate on |0>](https://latex.codecogs.com/gif.latex?H|0>=\frac{|0>&plus;|1>}{\sqrt{2}})
+
+![hadamard gate on |1>](https://latex.codecogs.com/gif.latex?H|1>=\frac{|0>-|1>}{\sqrt{2}})
+
+This gives you a qubit that will have the unbiased equal probability of getting |0> and |1> at a particular time. We then applied a **measurement gate** to the qubit that would perform a wave function collapse along the z-axis and result into either of the eigen states i.e. |0> or |1>.
+
 ___
-# Requirements
+
+# Requirements🛠
 The script is written in **Q#** and **Python** and uses Microsoft **Quantum Development Kit** and thus to run the script you need to have few packages, softwares and frameworks installed. The steps to install all requirements are listed below:
 
 + ## Python 3
@@ -29,7 +40,7 @@ The script is written in **Q#** and **Python** and uses Microsoft **Quantum Deve
 > If you use Visual Studio Code for using Q# you can install the [QDK extension for VS Code](https://marketplace.visualstudio.com/items?itemName=quantum.quantum-devkit-vscode)
 
 ___
-# Run
+# Run🏃‍♂️
 The repository has two files:
 + **generator.py**: This script generates the random numbers by simulating a quantum system and logs them in the **log.txt** file.
 + **liveplot.py**: This script monitors and plots the data in the **log.txt** file after every fixed interval of time.
